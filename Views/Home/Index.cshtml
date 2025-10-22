@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<RetoTecnicoDiegoNoblecilla.Models.User>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @foreach (var user in Model)
+    {
+        <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+            <img src="@user.Foto.Thumbnail" alt="Foto de @user.Identificacion.Nombre" />
+            <p><strong>@user.Identificacion.Titulo @user.Identificacion.Nombre @user.Identificacion.Apellido</strong></p>
+            <p>Género: @user.GeneroSpan</p>
+            <p>Ubicación: @user.Ubicacion.Ciudad, @user.Ubicacion.Estado, @user.Ubicacion.Pais</p>
+            <p>Email: @user.Email</p>
+            <p>Fecha de nacimiento: @user.Dob.FecNacFormat</p>
+        </div>
+    }
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
