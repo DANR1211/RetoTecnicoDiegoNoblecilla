@@ -18,7 +18,7 @@ Desarrollador con **4 años de experiencia profesional en C#** y el ecosistema .
 
 ## 🛠 Tecnologías utilizadas
 
-- **Lenguaje:** C# (.NET 6 / .NET 7)
+- **Lenguaje:** C# (.NET 8)
 - **Framework:** ASP.NET Core MVC
 - **Cliente HTTP:** `HttpClient` inyectado mediante `IHttpClientFactory`
 - **Deserialización JSON:** `System.Text.Json`
